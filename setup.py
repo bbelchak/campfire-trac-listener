@@ -5,7 +5,7 @@ setup(
     packages=['campfirelistener'],
     entry_points = {
         'trac.plugins' : [
-	    'campfirelistener.campfirelistener = campfirelistener.campfirelistener'
+	    'campfirelistener.campfirelistener = campfirelistener.campfirelistener',
 	    'campfirelistener.campfirewikilistener = campfirelistener.campfirewikilistener'
 	]
     },
