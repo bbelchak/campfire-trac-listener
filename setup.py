@@ -1,7 +1,7 @@
 from setuptools import setup
 
 setup(
-    name='TracCampfireListener', version='0.1',
+    name='TracCampfireListener', version='0.2',
     packages=['campfirelistener'],
     entry_points = {
         'trac.plugins' : [
