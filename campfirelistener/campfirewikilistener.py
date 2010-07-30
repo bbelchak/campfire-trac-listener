@@ -28,7 +28,7 @@ class CampfireWikiListener(Component):
         self._sendText(page, "added by %s." % (page.author))
 
     def wiki_page_changed(self, page, version, t, comment, author, ipnr):
-        self._sendText(page, "added by %s (comment: %s)." % (author, comment))
+        self._sendText(page, "changed by %s (comment: %s)." % (author, comment))
 
     def wiki_page_deleted(self, page):
         self._sendText(page, "deleted by %s." % (page.author))
