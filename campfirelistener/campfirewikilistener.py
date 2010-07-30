@@ -18,7 +18,7 @@ class CampfireWikiListener(Component):
         try:
             c = pinder.Campfire(self.subdomain, self.apiToken)
             room = c.room(self.roomId)
-            room.speak("%s: wiki page %s (http://%s%s/ticket/%i) %s" % (self.prefix, page.name, self.tracfqdn, self.projectPath, page.name, text))
+            room.speak("%s: wiki page %s (http://%s%s/wiki/%s) %s" % (self.prefix, page.name, self.tracfqdn, self.projectPath, page.name, text))
 
         except:
             self.env.log.error("Unexpected error: %s" % (sys.exc_info()[1]))
